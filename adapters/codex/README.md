@@ -7,7 +7,7 @@ mkdir -p ~/.agents/skills
 ln -s /absolute/path/to/smart-engineer-agent-skills/skills/repo-security-scan ~/.agents/skills/repo-security-scan
 ```
 
-For the v0.3, v0.4, and v0.5 skills, use the same pattern:
+For the remaining v1.0 skills, use the same pattern:
 
 ```sh
 ln -s /absolute/path/to/smart-engineer-agent-skills/skills/dependency-risk-review ~/.agents/skills/dependency-risk-review

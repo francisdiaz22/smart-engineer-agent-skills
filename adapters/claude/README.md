@@ -8,7 +8,7 @@ cp /absolute/path/to/smart-engineer-agent-skills/skills/repo-security-scan/SKILL
 cp -R /absolute/path/to/smart-engineer-agent-skills/skills/repo-security-scan/references ~/.claude/skills/repo-security-scan/
 ```
 
-Install the v0.3, v0.4, and v0.5 skills the same way:
+Install the remaining v1.0 skills the same way:
 
 ```sh
 for skill in dependency-risk-review secrets-preflight mcp-config-review ci-workflow-review developer-environment-review local-automation-review; do
