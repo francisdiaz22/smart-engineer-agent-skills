@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Show Project Info",
+      "type": "shell",
+      "command": "echo",
+      "args": ["Project opened"],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}

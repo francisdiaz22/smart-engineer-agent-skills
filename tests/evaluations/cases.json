@@ -1,0 +1,20 @@
+{
+  "schema_version": "1",
+  "description": "Deterministic, inert release corpus for the static repository security collector.",
+  "cases": [
+    {"name": "tasks-folder-open-safe", "fixture": "tasks-json-folder-open/safe", "status": "NO HIGH-RISK INDICATORS FOUND", "max_high": 0, "required_kinds": ["automatic-execution"]},
+    {"name": "tasks-folder-open-suspicious", "fixture": "tasks-json-folder-open/suspicious", "status": "HIGH-RISK FINDINGS", "min_high": 1, "required_kinds": ["automatic-execution", "concealment"]},
+    {"name": "dependency-safe", "fixture": "dependency-risk-review/safe", "status": "NO HIGH-RISK INDICATORS FOUND", "max_high": 0, "required_kinds": ["local-automation"]},
+    {"name": "dependency-suspicious", "fixture": "dependency-risk-review/suspicious", "status": "HIGH-RISK FINDINGS", "min_high": 1, "required_kinds": ["automation-lifecycle", "automation-high-risk-command"]},
+    {"name": "secrets-safe", "fixture": "secrets-preflight/safe", "status": "NO HIGH-RISK INDICATORS FOUND", "max_high": 0},
+    {"name": "secrets-suspicious", "fixture": "secrets-preflight/suspicious", "status": "HIGH-RISK FINDINGS", "min_high": 1},
+    {"name": "mcp-safe", "fixture": "mcp-config/safe", "status": "NO HIGH-RISK INDICATORS FOUND", "max_high": 0, "required_kinds": ["mcp-config"]},
+    {"name": "mcp-suspicious", "fixture": "mcp-config/suspicious", "status": "HIGH-RISK FINDINGS", "min_high": 1, "required_kinds": ["mcp-package-install", "mcp-secret-environment"]},
+    {"name": "ci-safe", "fixture": "ci-workflow-review/safe", "status": "NO HIGH-RISK INDICATORS FOUND", "max_high": 0, "required_kinds": ["ci-workflow"]},
+    {"name": "ci-suspicious", "fixture": "ci-workflow-review/suspicious", "status": "HIGH-RISK FINDINGS", "min_high": 1, "required_kinds": ["ci-privileged-trigger", "ci-remote-download", "ci-unpinned-action"]},
+    {"name": "developer-environment-safe", "fixture": "developer-environment-review/safe", "status": "NO HIGH-RISK INDICATORS FOUND", "max_high": 0, "required_kinds": ["developer-environment"]},
+    {"name": "developer-environment-suspicious", "fixture": "developer-environment-review/suspicious", "status": "HIGH-RISK FINDINGS", "min_high": 1, "required_kinds": ["developer-environment-privilege", "developer-environment-bootstrap"]},
+    {"name": "local-automation-safe", "fixture": "local-automation-review/safe", "status": "NO HIGH-RISK INDICATORS FOUND", "max_high": 0, "required_kinds": ["local-automation"]},
+    {"name": "local-automation-suspicious", "fixture": "local-automation-review/suspicious", "status": "HIGH-RISK FINDINGS", "min_high": 1, "required_kinds": ["automation-lifecycle", "automation-persistence"]}
+  ]
+}

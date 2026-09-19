@@ -1,0 +1,8 @@
+{
+  "name": "automation-safe-fixture",
+  "private": true,
+  "scripts": {
+    "check": "echo check placeholder",
+    "build": "echo build placeholder"
+  }
+}

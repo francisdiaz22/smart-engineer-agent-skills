@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    command: ["echo", "development placeholder"]
+    ports:
+      - "8000:8000"

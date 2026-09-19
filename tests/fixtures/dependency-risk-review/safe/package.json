@@ -1,0 +1,10 @@
+{
+  "name": "example-safe-package",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "example-library": "1.2.3"
+  }
+}

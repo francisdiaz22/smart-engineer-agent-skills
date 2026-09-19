@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "project-docs": {
+      "command": "trusted-mcp-server",
+      "args": ["--workspace", "/workspace/project-docs"],
+      "env": {
+        "MODE": "readonly"
+      }
+    }
+  }
+}
