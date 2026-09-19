@@ -1,8 +1,13 @@
-# v0.5 Evaluation Corpus
+# v1.0 Evaluation Corpus
 
-The v0.5 evaluation corpus is composed of the safe and suspicious fixture
-directories under:
+The v1.0 evaluation corpus is composed of safe and suspicious fixture
+directories covering the complete skill pack, including:
 
+- `tests/fixtures/tasks-json-folder-open/`
+- `tests/fixtures/dependency-risk-review/`
+- `tests/fixtures/secrets-preflight/`
+- `tests/fixtures/mcp-config/`
+- `tests/fixtures/ci-workflow-review/`
 - `tests/fixtures/developer-environment-review/`
 - `tests/fixtures/local-automation-review/`
 
